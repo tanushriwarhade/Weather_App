@@ -1,42 +1,72 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-}
-.body{
-    background: #222;
+    font-family: Arial, sans-serif;
 }
 
-.card{
-    width: 90%;
-    max-width: 470px;
+body {
+    height: 100vh;
     background: linear-gradient(135deg, #00feba, #5b548a);
-    color: #fff;
-    margin: 100px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 320px;
+    background: white;
     border-radius: 20px;
-    padding: 40px 35px;
+    padding: 30px;
     text-align: center;
 }
 
-.search{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+.title {
+    margin-bottom: 20px;
 }
 
-.search input{
-    border: 0;
-    outline: 0;
-    background: #ebfffc;
-    color: #555;
-    padding: 10px 25px;
-    height: 60px;
-    border-radius: 30px;
-    flex: 1;
-    margin-right: 16px;
-    font-size: 18px;
+.search {
+    display: flex;
+    gap: 10px;
+}
 
+.search input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search button {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    background: #5b548a;
+    color: white;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background: #4a4475;
+}
+
+.weather {
+    margin-top: 25px;
+}
+
+.temp {
+    font-size: 45px;
+}
+
+.city {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 10px;
 }
